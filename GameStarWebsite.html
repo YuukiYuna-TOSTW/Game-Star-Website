@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Star | Genshin Impact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <button class="mobile-menu-btn d-md-none" onclick="toggleSidebar()">☰ Menu</button>
+  <div class="overlay" onclick="toggleSidebar()"></div>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-12 col-md-3 col-lg-2 sidebar d-md-block">
+        <div class="text-center mb-4">
+          <img src="images/Website Logo.jpg" alt="Game Star Logo" class="img-fluid rounded-3 mb-5 " style="max-height: 200px;">
+        </div>
+
+        <div class="menu-box bg-light text-center">
+          <a href="#homepage-section" class="text-white d-block text-decoration-none mb-2 rounded" style="background-color: #6C6C6C;" 
+             onclick="showSection('homepage-section'); if(window.innerWidth <= 767) toggleSidebar();">
+            Home Page
+          </a>
+        </div>
+        <div class="menu-box bg-light text-center">
+          <a href="#character-section" class="text-white d-block text-decoration-none mb-2 rounded" style="background-color: #6C6C6C;"
+             onclick="showSection('character-section'); if(window.innerWidth <= 767) toggleSidebar();">
+            Character
+          </a>
+        </div>
+        <div class="menu-box bg-light text-center">
+          <a href="#artifacts-section" class="text-white d-block text-decoration-none mb-2 rounded" style="background-color: #6C6C6C;" 
+             onclick="showSection('artifacts-section'); if(window.innerWidth <= 767) toggleSidebar();">
+            Artifacts
+          </a>
+        </div>
+        <div class="menu-box bg-light text-center">
+          <a href="#weapon-section" class="text-white d-block text-decoration-none mb-5 rounded" style="background-color: #6C6C6C;"
+             onclick="showSection('weapons-section'); if(window.innerWidth <= 767) toggleSidebar();">
+            Weapons
+          </a>
+        </div>
+        <div class="menu-box bg-light text-center">
+          <a href="#Aboutme-section" class="text-white d-block text-decoration-none mb-5 rounded" style="background-color: #6C6C6C;" 
+             onclick="showSection('Aboutme-section'); if(window.innerWidth <= 767) toggleSidebar();">
+            About Me
+          </a>
+        </div>
+        
+        <div class="mt-4">
+          <div class="social-logo-box">
+            <a href="https://www.linkedin.com/in/aristo-iskandar-b72633340/" class="text-dark text-decoration-none">
+              <img src="images/LinkedIn Logo.png" alt="LinkedIn Logo">
+              <span style="color: white;">LinkedIn</span>
+            </a>
+          </div>
+          <div class="social-logo-box">
+            <a href="https://www.instagram.com/aristoiskandar/?__pwa=1" class="text-dark text-decoration-none">
+              <img src="images/Instagram Logo.png" alt="Instagram Logo">
+              <span style="color: white;">Instagram</span>
+            </a>
+          </div>
+          <div class="social-logo-box">
+            <a href="https://x.com/Yunachansenpai" class="text-dark text-decoration-none">
+              <img src="images/Twittter Logo.png" alt="Twitter Logo">
+              <span style="color: white;">Twitter</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+      
+      <main class="col-12 col-md-9 col-lg-10 main-content">
+        <!-- Homepage Section -->
+        <section id="homepage-section" class="content-section active-section">
+          <!-- Game & Profile Section -->
+         <div class="card mb-4 shadow-sm p-3 profile-section" style="background-color: #868686;">
+          <div class="row g-2">
+            <!-- Game Name Box -->
+            <div class="col-12 col-sm-4"  >
+              <div class="game-name-container p-2 bg-light border rounded h-100" style="background-color: #D9D9D9;">
+                <h5 class="mb-0">Genshin Impact</h5>
+              </div>
+            </div>
+
+            <!-- Game Logo Box -->
+            <div class="col-12 col-sm-4">
+              <div class="p-2 bg-light border rounded d-flex align-items-center justify-content-center h-100" style="background-color: #D9D9D9;">
+                <img src="images/Genshin Impact Logo.jpeg" alt="Genshin" style="max-height: 35px;">
+              </div>
+            </div>
+
+            <!-- Profile Box -->
+            <div class="col-12 col-sm-4">
+              <div class="d-flex align-items-center bg-light border rounded p-2 h-100 justify-content-center">
+                <img src="images/Profil.jpg" alt="Profile" class="rounded-circle me-2" style="width: 35px; height: 35px; object-fit: cover;">
+                <span class="fw-bold">YuukiYuna</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Announcement & Developer Section -->
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <div class="card p-2 shadow-sm" style="background-color: #D9D9D9;">
+              <img src="images/Special Program Announcment.png" alt="Special Program">
+              <div class="text-white p-2 mt-3 rounded text-center" style="background-color: #515151;">
+                <p class="mb-0">
+                  Dear Traveler, it's announcement time!<br>
+                  Premier 3/14/2025 at 08:00 AM (UTC-4) on Twitch and YouTube.<br>
+                  Featuring version 5.5 updates and redemption codes!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card p-3 shadow-sm" style="background-color: #D9D9D9;">
+              <img src="images/Developer Discusion.png" alt="Developer Discussion">
+              <div class="text-white p-3 mt-3 rounded text-center" style="background-color: #515151;">
+                <p class="mb-0">
+                  New Developers Discussion!<br>
+                  Cross-scene quests, new bosses, system optimizations, and controller support for Android!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wallpaper Section -->
+        <div class="card my-4 p-3 shadow-sm" style="background-color: #D9D9D9;">
+          <div class="border rounded text-center text-white p-3 mb-3" style="background-color: #515151;">
+            <h5 class="mb-0">"Moonlight Amidst Dreams" Wallpaper Series</h5>
+          </div>
+          <div class="row g-3">
+            <div class="col-6 col-md-4">
+              <img src="images/Wallpaper 1.png" alt="Wallpaper 1">
+              <img src="images/Wallpaper 2.png" alt="Wallpaper 2" class="mt-2">
+              <img src="images/wallpaper 5.png" alt="Wallpaper 5" class="mt-2">
+            </div>
+            <div class="col-6 col-md-4">
+              <img src="images/Wallpaper 3.png" alt="Wallpaper 3" style="height: 100%;">
+            </div>
+            <div class="col-12 col-md-4">
+              <img src="images/Wallpaper 4.png" alt="Wallpaper 4" style="height: 100%;">
+            </div>
+          </div>
+        </div>
+
+        <!-- Emoji & Event -->
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <div class="card p-3 shadow-sm" style="background-color: #D9D9D9;">
+              <div class="text-white p-2 rounded mb-2 text-center" style="background-color: #515151;">
+                <strong>Genshin Emojis Set 39 Now Available!</strong>
+              </div>
+              <img src="images/Emoji.png" alt="Emoji">
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card p-3 shadow-sm mb-3" style="background-color: #D9D9D9;">
+              <img src="images/Event Detail.png" alt="Event">
+              <div class="text-white p-2 rounded mt-2 text-center" style="background-color: #515151;">
+                <p class="mb-0">Hello, Traveler!<br>
+                  Hmm? Looks like Yae Miko sent us a letter...
+                  Let's go, Traveler! Follow the letter's lead and head to Tenshukaku in Inazuma to discuss some important, festival-related matters!</p>
+              </div>
+            </div>
+            <div class="card p-3 shadow-sm" style="background-color: #D9D9D9;">
+              <img src="images/Mizuki.png" alt="Mizuki">
+              <div class="text-white p-2 rounded mt-2 text-center" style="background-color: #515151;">
+                <p class="mb-0">"Don't Fear, Mizuki's Here! — The show that Inazuma's youkai just can't get enough of, now airing to rave reviews!"
+                  "Hosted by the well-traveled, knowledgeable, and gorgeous clinical psychologist, Ms. Yumemizuki, who's here to help you tackle your trickiest troubles!"
+                  "Day or night, she'll meet you in every dream where your heart is laid bare!"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+      
+        <!-- Character Section -->
+        <section id="character-section" class="content-section">
+          <!-- Game & Profile Section -->
+          <div class="card mb-4 shadow-sm p-3 profile-section" style="background-color: #868686;">
+            <div class="row g-2">
+              <!-- Game Name Box -->
+              <div class="col-12 col-sm-4">
+                <div class="game-name-container p-2 bg-light border rounded h-100" style="background-color: #D9D9D9;">
+                  <h5 class="mb-0">Genshin Impact</h5>
+                </div>
+              </div>
+
+              <!-- Game Logo Box -->
+              <div class="col-12 col-sm-4">
+                <div class="p-2 bg-light border rounded d-flex align-items-center justify-content-center h-100" style="background-color: #D9D9D9;">
+                  <img src="images/Genshin Impact Logo.jpeg" alt="Genshin" style="max-height: 35px;">
+                </div>
+              </div>
+
+              <!-- Profile Box -->
+              <div class="col-12 col-sm-4">
+                <div class="d-flex align-items-center bg-light border rounded p-2 h-100 justify-content-center">
+                  <img src="images/Profil.jpg" alt="Profile" class="rounded-circle me-2" style="width: 35px; height: 35px; object-fit: cover;">
+                  <span class="fw-bold">YuukiYuna</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Element Filter Section -->
+          <div class="row g-3">
+            <div class="col-12">
+              <div class="card p-3 shadow-sm" style="background-color: #868686;">
+
+                <!-- Element Filter Container -->
+                <div class="element-filter-container d-flex flex-wrap justify-content-center gap-2 p-2 rounded mb-2" style="background-color: #515151;">
+                  <img src="images/Pyro Logo.png" class="img-fluid element-filter" style="width: 40px; height: 40px; cursor: pointer;" data-element="pyro" title="Pyro">
+                  <img src="images/Hydro Logo.png" class="img-fluid element-filter" style="width: 40px; height: 40px; cursor: pointer;" data-element="hydro" title="Hydro">
+                  <img src="images/Dendro Logo.png" class="img-fluid element-filter" style="width: 40px; height: 40px; cursor: pointer;" data-element="dendro" title="Dendro">
+                  <img src="images/Electro Logo.png" class="img-fluid element-filter" style="width: 40px; height: 40px; cursor: pointer;" data-element="electro" title="Electro">
+                  <img src="images/Anemo Logo.png" class="img-fluid element-filter" style="width: 40px; height: 40px; cursor: pointer;" data-element="anemo" title="Anemo">
+                  <img src="images/Cryo Logo.png" class="img-fluid element-filter" style="width: 40px; height: 40px; cursor: pointer;" data-element="cryo" title="Cryo">
+                  <img src="images/Geo Logo.png" class="img-fluid element-filter" style="width: 40px; height: 40px; cursor: pointer;" data-element="geo" title="Geo">
+                </div>
+                
+                <!-- Show All Button Container -->
+                <div id="show-all-container" class="text-center mb-4 mt-3">
+                  <button id="show-all" class="btn btn-sm text-white" style="background-color: #515151; width: 250px; height: 40px;">All Characters</button>
+                </div>
+                
+                <!-- Characters Container - Dual Mode -->
+                <div class="characters-display">
+                  
+                  <!-- Grid Mode (for Show All) -->
+                  <div class="container-fluid" id="grid-mode">
+                    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-3">
+
+                      <!-- Kamisato Ayaka (Cryo) -->
+                      <div class="character" data-name="Kamisato Ayaka" data-element="Cryo">
+                        <img src="images/Kamisato Ayaka.png" class="character-img" alt="Kamisato Ayaka">
+                        <div class="character-info">
+                        </div>
+                      </div>
+                      
+                      <!-- Nilou (Hydro) -->
+                      <div class="character" data-name="Nilou" data-element="Hydro">
+                        <img src="images/Nilou.png" class="character-img" alt="Nilou">
+                        <div class="character-info">
+                        </div>
+                      </div>
+
+                      <!-- Chiori (Geo) -->
+                      <div class="character" data-name="Chiori" data-element="Geo">
+                        <img src="images/Chiori.png" class="character-img" alt="Chiori">
+                        <div class="character-info">
+                        </div>
+                      </div>
+                      
+                      <!-- Shenhe (Cryo) -->
+                      <div class="character" data-name="Shenhe" data-element="Cryo">
+                        <img src="images/Shenhe.png" class="character-img" alt="Shenhe">
+                        <div class="character-info">
+                        </div>
+                      </div>
+
+                      <!-- Keqing (Electro) -->
+                      <div class="character" data-name="Keqing" data-element="Electro">
+                        <img src="images/Keqing.png" class="character-img" alt="Keqing">
+                        <div class="character-info">
+                        </div>
+                      </div>
+                      
+                      <!-- Eula (Cryo) -->
+                      <div class="character" data-name="Eula" data-element="Cryo">
+                        <img src="images/Eula.png" class="character-img" alt="Eula">
+                        <div class="character-info">
+                        </div>
+                      </div>
+
+                      <!-- Nahida (Dendro) -->
+                      <div class="character" data-name="Nahida" data-element="Dendro">
+                        <img src="images/Nahida.png" class="character-img" alt="Nahida">
+                        <div class="character-info">
+                        </div>
+                      </div>
+                      
+                      <!-- Furina (Hydro) -->
+                      <div class="character" data-name="Furina" data-element="Hydro">
+                        <img src="images/Furina.png" class="character-img" alt="Furina">
+                        <div class="character-info">
+                        </div>
+                      </div>
+
+                      <!-- Zhongli (Geo) -->
+                      <div class="character" data-name="Zhongli" data-element="Geo">
+                        <img src="images/Zhongli.png" class="character-img" alt="Zhongli">
+                        <div class="character-info">
+                        </div>
+                      </div>
+                      
+                      <!-- Yoimiya (Pyro) -->
+                      <div class="character" data-name="Yoimiya" data-element="Pyro">
+                        <img src="images/Yoimiya.png" class="character-img" alt="Yoimiya">
+                        <div class="character-info">
+                        </div>
+                      </div>
+
+                      <!-- Hutao (Pyro) -->
+                      <div class="character" data-name="Hutao" data-element="Pyro">
+                        <img src="images/Hutao.png" class="character-img" alt="Hutao">
+                        <div class="character-info">
+                        </div>
+                      </div>
+                      
+                      <!-- Navia (Geo) -->
+                      <div class="character" data-name="Navia" data-element="Geo">
+                        <img src="images/Navia.png" class="character-img" alt="Navia">
+                        <div class="character-info">
+                        </div>
+                      </div>
+
+                      <!-- Mona (Hydro) -->
+                      <div class="character" data-name="Mona" data-element="Hydro">
+                        <img src="images/Mona.png" class="character-img" alt="Mona">
+                        <div class="character-info">
+                        </div>
+                      </div>
+                      
+                      <!-- Venti (Amemo) -->
+                      <div class="character" data-name="Venti" data-element="Anemo">
+                        <img src="images/Venti.png" class="character-img" alt="Venti">
+                        <div class="character-info">
+                        </div>
+                      </div>
+
+                      <!-- Klee (Pyro) -->
+                      <div class="character" data-name="Klee" data-element="Pyro">
+                        <img src="images/Klee.png" class="character-img" alt="Klee">
+                        <div class="character-info">
+                        </div>
+                      </div>
+                      
+                      <!-- Jean (Anemo) -->
+                      <div class="character" data-name="Jean" data-element="Anemo">
+                        <img src="images/Jean.png" class="character-img" alt="Jean">
+                        <div class="character-info">
+                        </div>
+                      </div>
+
+                      <!-- Ganyu (Cryo) -->
+                      <div class="character" data-name="Ganyu" data-element="Cryo">
+                        <img src="images/Ganyu.png" class="character-img" alt="Ganyu">
+                        <div class="character-info">
+                        </div>
+                      </div>
+
+
+                      <!-- ... (karakter lainnya tetap sama) ... -->
+                    </div>
+                  </div>
+
+                  <div id="character-detail-view" class="content-section">
+                    <div class="container">
+                      <button id="back-button" class="btn btn-secondary mb-3">
+                        <i class="fas fa-arrow-left"></i> Back to Characters
+                      </button>
+                      
+                      <div class="character-detail-container">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="character-image-container">
+                              <img id="character-detail-image" class="character-detail-image" src="" alt="">
+                              <span id="character-detail-element" class="element-badge"></span>
+                            </div>
+                            
+                            <div class="character-meta mt-3">
+                              <p><strong>Weapon:</strong> <span id="character-detail-weapon"></span></p>
+                              <p><strong>Region:</strong> <span id="character-detail-region"></span></p>
+                            </div>
+                          </div>
+                          
+                          <div class="col-md-8">
+                            <h2 id="character-detail-name"></h2>
+                            <p id="character-detail-description" class="lead"></p>
+                            
+                            <div class="character-stats mt-4">
+                              <h4>Base Stats (Lv.90)</h4>
+                              <ul class="list-group">
+                                <li class="list-group-item">HP: <span id="character-hp"></span></li>
+                                <li class="list-group-item">ATK: <span id="character-atk"></span></li>
+                                <li class="list-group-item">DEF: <span id="character-def"></span></li>
+                              </ul>
+                            </div>
+                            
+                            <div class="character-skills mt-4">
+                              <h4>Skills</h4>
+                              <div id="character-skills" class="list-group">
+                                <!-- Skills akan diisi oleh JavaScript -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <!-- Artifacts Section -->
+        <section id="artifacts-section" class="content-section">
+          <!-- Game & Profile Section -->
+        </section>
+      
+        <!-- Weapons Section -->
+        <section id="weapons-section" class="content-section">
+          <!-- Game & Profile Section --> 
+        </section>
+      
+        <!-- About Us Section -->
+        <section id="aboutu s-section" class="content-section">
+          <!-- Game & Profile Section -->
+         <div class="card mb-4 shadow-sm p-3 profile-section">
+          <div class="row g-2">
+            <!-- Game Name Box -->
+            <div class="col-12 col-sm-4">
+              <div class="game-name-container p-2 bg-light border rounded h-100">
+                <h5 class="mb-0">Genshin Impact</h5>
+              </div>
+            </div>
+
+            <!-- Game Logo Box -->
+            <div class="col-12 col-sm-4">
+              <div class="p-2 bg-light border rounded d-flex align-items-center justify-content-center h-100">
+                <img src="images/Genshin Impact Logo.jpeg" alt="Genshin" style="max-height: 35px;">
+              </div>
+            </div>
+
+            <!-- Profile Box -->
+            <div class="col-12 col-sm-4">
+              <div class="d-flex align-items-center bg-light border rounded p-2 h-100 justify-content-center">
+                <img src="images/Profil.jpg" alt="Profile" class="rounded-circle me-2" style="width: 35px; height: 35px; object-fit: cover;">
+                <span class="fw-bold">YuukiYuna</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </section>
+      </main>
+    </div>
+    </div>
+
+  <footer class="footer" style="background-color: #6C6C6C;">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center" style="background-color: #6C6C6C;">
+      <div class="contact-box border p-2 rounded mb-2 mb-md-0 text-dark" style="background-color: #D9D9D9;">
+        📞 Website Contact: 08114856877
+      </div>
+      <div class="license-box border p-2 rounded text-dark" style="background-color: #D9D9D9;">
+        © 2025 | By : Game Star Official
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
